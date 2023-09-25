@@ -1,0 +1,48 @@
+export const products= [
+    {
+      name: "Citrons",
+      image: "../assets/images/citron-bg.png",
+      prix: 1 ,
+      unite: "pce",
+      detail:"Avec sa jolie couleur jaune et son goût acide, le citron est reconnaissable entre mille. Cet agrume aux vertus santé uniques est consommé partout à travers le monde et a d’ailleurs vu sa consommation exploser ces dix dernières années. Côté cuisine, il se glisse absolument partout, de l’entrée au dessert, pour notre plus grand bonheur. ",
+      chosen: false,
+      id: 0,
+    },
+    {
+      name: "Bananes",
+      image: "../assets/images/banane-bg.png",
+      prix: 2.90,
+      unité: "pce",
+      detail:"Riche en antioxydants, la banane préviendrait l’apparition de nombreuses maladies. De plus, les sucres qu’elle contient contribueraient à maintenir une bonne santé gastro-intestinale. D’un point de vue culinaire, on distingue 2 types de bananes : les bananes à dessert, comme celles que nous mangeons au petit-déjeuner, et les bananes à cuire, comme le plantain.",
+      chosen: false,
+      id: 1,
+    },
+    {
+      name: "tomates",
+      image: "../assets/images/tomate-bg.png",
+      prix: 2.5,
+      unite: "kg",
+      detail:"La tomate est le légume d'été par excellence et c'est le légume le plus consommé en France. Elle est facile à consommer et se cuisine aussi bien salé qu'en sucré. Sa peau colorée est gorgée de pigments ayant de multiples bienfaits pour la santé.",
+      chosen: false,
+      id: 2,
+    },
+    {
+      name: "carottes",
+      image: "../assets/images/carottes-bg.png",
+      prix: 1.9,
+      unite: "kg",
+      detail:"La carotte fait partie des légumes les plus consommés en France. Pour cause, sa saveur douce et sucrée se prête à toutes les associations en cuisine et séduit les petits comme les grands. Ce succès est une excellente nouvelle puisque le profil nutrition de la carotte est remarquable et unique.  ",
+      chosen: false,
+      id: 3,
+    },
+    {
+      name: "biscuits",
+      image: "../assets/images/cookies-bg.png",
+      prix: 1.5,
+      unite: "pce",
+      detail:"Le cookie a été inventé en 1938 par les cuisinières américaines Ruth Graves Wakefield et Sue Brides. Elles ont mis au point la recette durant la période où elles possédaient l'auberge Toll House Inn (en) à Whitman, dans le Massachusetts.",
+      chosen: false,
+      id: 4,
+    },
+   
+  ];

@@ -1,0 +1,25 @@
+.detail_body{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5%;
+    color: rgb(72, 68, 62);
+}
+
+
+.detail_descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 50%;
+    background: antiquewhite;
+    opacity: .8;
+    border-radius: 10px;
+
+}
+
+.detail_detail{
+    margin: 5%;
+}

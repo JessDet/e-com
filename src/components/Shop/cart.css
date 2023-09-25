@@ -1,0 +1,28 @@
+.shop_body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 15%;
+    /* height: 100vh; */
+}
+
+.cart_title{
+    color: antiquewhite;
+}
+
+.cart_table{
+   background: antiquewhite;
+   opacity: .8;
+   width: 70%;
+}
+
+/* .cart_thbody{
+    
+} */
+
+.cart_tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px ;
+}
