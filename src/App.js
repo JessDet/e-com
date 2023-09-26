@@ -2,8 +2,8 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import DetailProduct from './components/Products/DetailProduct';
-import ProductList from './components/Products/ProductList';
-import ShopCart from './components/Shop/ShopCart';
+import ProductList from './pages/Shop/ProductList';
+import Checkout from './pages/Checkout/Checkout';
 
 export default function App({products}) {
 
@@ -13,7 +13,7 @@ export default function App({products}) {
   
       <Route path="/" element={ <ProductList/>  } />
       <Route path="/detail/:id" element={<DetailProduct products={products}/>} />
-      <Route path="/shopCart" element={<ShopCart/>} />
+      <Route path="/checkout" element={<Checkout/>} />
 
     </Routes>
   );

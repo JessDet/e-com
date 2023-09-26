@@ -1,12 +1,15 @@
-import OneProduct from "./oneProduct";
+import OneProduct from "../../components/Products/oneProduct";
 import { products } from "../../data/products"
-import "../Products/productList.css"
+import "../Shop/productList.css"
 import { FaMagnifyingGlass } from "react-icons/fa6"
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ProductsContext } from "../../contexts/products.context";
 
 
 
 export default function ProductList (){
+
+    const { products } = useContext(ProductsContext)
 
     const [filter, setFilter] = useState("");
 

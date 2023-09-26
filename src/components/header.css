@@ -2,29 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f18110;
-    height: 12vh;
+    background-color: #4F7344;
+    height: 15vh;
 }
 
 .logo{
-    width: 200px;
-    margin-left: 5%;
+    width: 150px;
+    margin-left: 10%;
 }
 
 .icon_header{
-    width: 30px;
-    height: 30px;
-    border: 1px solid darkcyan;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 5%;
-    
-}
-
-.header_input{
-    border: 1px;
-    border-color: darkcyan;
-    height: 3vh;
+    color: white;
 }

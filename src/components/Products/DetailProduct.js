@@ -1,13 +1,21 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import "../Products/detailProd.css";
 import { useParams } from 'react-router-dom';
 import { products } from "../../data/products"
+import { ProductsContext } from '../../contexts/products.context';
+import { CartContext } from '../../contexts/cart.context';
 
 
 
 export default function DetailProduct (){ 
     const { id } = useParams();
+
+    const { produc } = useContext(ProductsContext);
+
+    const { addItemToCart } = useContext(CartContext);
+
+    const addProductToCart = () => addItemToCart(product);
 
     const product = products && products.find(product => product.id === parseInt(id));
 
@@ -16,7 +24,8 @@ export default function DetailProduct (){
       return <div>Produit non trouvé</div>;
     }
 
-    const [number, setNumber] = useState('')
+
+
 
     return(
         
@@ -33,11 +42,9 @@ export default function DetailProduct (){
                     <span>Prix : { product.prix } €</span>
                 </div>
                 <div>
-                    <button> - </button>
-                    <input type='number' value={number}/> 
-                    <button> + </button>
+                    {/* <input type='number' value={quantity} min="0" onChange={(e) => setQuantity(parseInt(e.target.value))}/>  */}
                 </div>
-                <button type='submit'>panier</button>
+                <button onClick={addProductToCart}>ajouter au panier</button>
             </div>
 
 
