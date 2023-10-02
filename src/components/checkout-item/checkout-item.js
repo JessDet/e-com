@@ -5,7 +5,7 @@ import './checkout-item.css';
 
 export const CheckoutItem = ({cartItem}) =>
     {
-    const {name, quantity, image, prix} = cartItem
+    const {name, quantity, image, price} = cartItem
     const { addItemToCart, removeItemToCart, clearItemToCart} = useContext(CartContext)
 
     const clearItemHandler = () => clearItemToCart(cartItem)
@@ -28,7 +28,7 @@ return (
             <div onClick={addItemHandler}>&#10095;</div>
         </div>
 
-        <span className='price'>{prix}</span>
+        <span className='price'>{price}</span>
 
         <div className='remove-button'onClick={clearItemHandler}>&#10005;</div>
         

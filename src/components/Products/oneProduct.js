@@ -15,7 +15,7 @@ export default function OneProduct ({product}) {
             </div>
             <div>
                 <h3>{product.name}</h3>
-                <span>Prix : {product.prix} €</span>
+                <span>Prix : {product.price} €</span>
             </div>
             <div>
                <Link to={`/detail/${product.id}`}> <button >Info produit</button></Link>

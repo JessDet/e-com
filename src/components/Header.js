@@ -21,6 +21,15 @@ const { isCartOpen } = useContext(CartContext);
         <div className="logo_title">
           <Link to={`/`}><img src={logo} alt="logo du site"  className='logo'/></Link>
         </div>
+        <div className="logo_title">
+          <Link to={`/login`}><h3>CONNEXION</h3></Link>
+        </div>
+        <div className="logo_title">
+          <Link to={`/register`}><h3>INSCRIPTION</h3></Link>
+        </div>
+        <div className="logo_title">
+          <Link to={`/profil`}><h3>PROFIL</h3></Link>
+        </div>
         <div className='icon_header'>
         <CartIcon />
         </div>

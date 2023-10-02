@@ -7,18 +7,21 @@ import Header from './components/Header';
 import { BrowserRouter } from 'react-router-dom';
 import { ProductsProvider } from './contexts/products.context';
 import { CartProvider } from './contexts/cart.context';
+import { UsersProvider } from './contexts/users.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Provider> */}
       < BrowserRouter>
-        <ProductsProvider>
-          <CartProvider>
-            <Header/>
-            <App />
-          </CartProvider>
-        </ProductsProvider>
+        
+          <ProductsProvider>
+            <CartProvider>
+              <Header/>
+              <App />
+            </CartProvider>
+          </ProductsProvider>
+        
       </BrowserRouter>
     {/* </Provider> */}
   </React.StrictMode>

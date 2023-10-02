@@ -4,7 +4,7 @@ import'./cart-item.css'
 
 
 const CartItem = ({ cartItem }) => {
-    const { image, prix, name, quantity } = cartItem;
+    const { image, price, name, quantity } = cartItem;
   
     return (
       <div className='cart-item-container'>
@@ -13,7 +13,7 @@ const CartItem = ({ cartItem }) => {
           <span className='name'>{name}</span>
           <br/>
           <span className='price'>
-            {quantity} x € {prix}
+            {quantity} x € {price}
           </span>
         </div>
       </div>
