@@ -1,5 +1,5 @@
 import OneProduct from "../../components/Products/oneProduct";
-import { products } from "../../data/products"
+// import { products } from "../../data/products"
 import "../Shop/productList.css"
 import { FaMagnifyingGlass } from "react-icons/fa6"
 import { useState, useContext } from "react";

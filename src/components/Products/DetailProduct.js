@@ -27,7 +27,7 @@ export default function DetailProduct (){
     // }
 
     const fetchdataproduct = () => {
-        axios.get (`http://127.0.0.1:8001/api/products/${id}`)
+        axios.get (`http://127.0.0.1:8000/api/products/${id}`)
         .then((resp) => {
         //   console.log(resp.data);
           setOneProduct(resp.data)

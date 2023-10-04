@@ -11,7 +11,7 @@ export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
   const fetchdataproduct = () => {
-    axios.get ('http://127.0.0.1:8001/api/products')
+    axios.get ('http://127.0.0.1:8000/api/products')
     .then((resp) => {
       // console.log(resp.data);
       setProducts(resp.data['hydra:member'])
